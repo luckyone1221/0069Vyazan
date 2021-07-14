@@ -1,0 +1,266 @@
+// start .sThin
+.sThin {
+	//min-height: 941px;//!!!!!!!!
+	overflow: hidden;
+	background: $gray-220;
+	position: relative;
+	z-index: 1;
+
+	--sPT: #{rem(74)};
+	--sPB: #{rem(26px)};
+	--sTPB: #{rem(62px)};
+
+	&__card-box{
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		width: 295px;
+	}
+
+	&__card{
+		//background-color: red;
+		position: absolute;
+		right: 0;
+		top: -84px;
+		width: 100%;
+	}
+	&__mist-txt{
+		position: absolute;
+		top: rem(365);
+		right: rem(20);
+
+		font-size: rem(13);
+		line-height: (18/13);
+		text-decoration-line: underline;
+		color: $blue2;
+		transform: rotate(-20deg);
+	}
+	.section-title{
+		max-width: rem(540);
+
+		h2{
+			margin-bottom: rem(25);
+			margin-left: -7px;
+			letter-spacing: rem(2.6px);
+		}
+		p{
+			margin-bottom: rem(16);
+			font-size: rem(18);
+			line-height: (25/18);
+		}
+		& > *:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__materials{
+		margin-bottom: -7px;
+	}
+	&__material{
+		&.material-1{
+			margin: 0 0 13px 0;
+		}
+		&.material-2{
+			margin: 0 0 10px 35px;
+		}
+		&.material-3{
+			margin: 0 0 0 90px;
+		}
+
+		img{
+			width: auto;
+			max-width: 100%;
+		}
+	}
+	&__materials{
+
+	}
+	&__brush{
+		position: relative;
+		width: 1000px;
+		margin-left: calc(-1 * (1000px - 100%) / 2);
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+		}
+
+		padding-bottom: 200px;
+	}
+	&__size{
+		position: absolute;
+
+
+		&:before{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+			content: '';
+			width: 1px;
+		}
+		font-size: 14px;
+		font-weight: 500;
+
+		&:nth-child(1){
+			left: 15px;
+			top: 59px;
+
+			&:before{
+				height: 39px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 9px;
+				transform: translateX(5px);
+			}
+		}
+		&:nth-child(2){
+			left: 61px;
+			top: 66px;
+
+			&:before{
+				height: 19px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 3px;
+				//transform: translateX(5px);
+			}
+		}
+		&:nth-child(3){
+			left: 124px;
+			top: 66px;
+
+			&:before{
+				height: 19px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 3px;
+				transform: translateX(-15px);
+			}
+		}
+		&:nth-child(4){
+			left: 289px;
+			top: 61px;
+
+			&:before{
+				height: 19px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 3px;
+				transform: translateX(-15px);
+			}
+		}
+		&:nth-child(5){
+			left: 416px;
+			top: 57px;
+
+			&:before{
+				height: 19px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 3px;
+				transform: translateX(-4px);
+			}
+		}
+		&:nth-child(6){
+			left: 544px;
+			top: 57px;
+
+			&:before{
+				height: 19px;
+				background-color: rgba(0, 0, 0, 0.4);
+				margin-bottom: 0px;
+				transform: translateX(9px);
+			}
+		}
+		&:nth-child(7){
+			&:before{
+				content: none;
+			}
+
+			right: 2px;
+			top: 72px;
+		}
+	}
+	&__s-big{
+		position: absolute;
+		left: 75px;
+		top: 83px;
+
+		&:before{
+			display: block;
+			content: '';
+			height: rem(99);
+			width: rem(1);
+			background-color: rgba(0, 0, 0, 0.5);
+
+			margin: 0 auto -5px;
+			transform: rotate(-1deg) translateX(10px);
+		}
+	}
+	&__s-row{
+		--bs-gutter-x: 10px;
+		transform: rotate(-1deg);
+	}
+	&__s-icon{
+		width: rem(42);
+		margin-top: 11px;
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+	&__s-val{
+		font-weight: 400;
+		font-size: 30px;
+		margin-bottom: rem(-7px);
+	}
+	&__s-txt{
+		font-size: 15.8px;
+		line-height: 1.4;
+	}
+	&__girl{
+		position: absolute;
+		left: 576px;
+		top: 80px;
+	}
+	&__high{
+		position: absolute;
+		width: rem(130);
+		right: -4px;
+		top: 120px;
+		transform: rotate(-1.69deg);
+
+		font-size: rem(13);
+		line-height: (18/13);
+	}
+	&__more{
+		position: absolute;
+		top: 191px;
+		left: 603px;
+	}
+	&__m-row{
+		--bs-gutter-x: 3px;
+	}
+	&__m-icon{
+		width: rem(12);
+		height: rem(12);
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__m-big{
+		font-weight: 500;
+		margin-bottom: 0px;
+
+		font-size: 14px;
+	}
+	&__m-txt{
+		font-size: 11.4px;
+	}
+	&__{}
+	&__{}
+	&__{}
+} // end.sThin

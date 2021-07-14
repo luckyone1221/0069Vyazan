@@ -1,0 +1,71 @@
+mixin sThin(data)
+	// start sThin
+	+b.SECTION.sThin.section#sThin&attributes(attributes)
+		.container
+			+e.card-box
+				+e.card
+					img(src="img/@2x/card.png" alt="")
+				+e.mist-txt
+					| Развенчание мифа
+					br
+					| об аллергии
+					br
+					| на шерсть
+			+b.section-title
+				h2 Тонкая шерсть не зудит
+				p Будет зудеть кожа после шерсти или нет зависит от толщины волокна. Чем меньше диаметр волокна шерсти, тем мягче ткань и тем меньше она чешется. Тоньше — значит мягче. Диаметр измеряется в микронах (мкм) — одной миллионной метра. Покалывания и зуд ощущается после шерсти с крупными микронами → ≥ 30 мкм.
+				p
+					| Получается,
+					|
+					span.text-success с тонкой шерстью ничего не чешется
+					br
+					|
+					span.text-warning средняя толщина шерсти иногда вызывает дискомфорт
+					|
+					br
+					span.text-danger толстая шерсть часто зудит
+			+e.materials
+				+sThinMaterial(1)
+				+sThinMaterial(2)
+				+sThinMaterial(3)
+			+e.brush
+				img(loading="lazy" src="img/svg/brush.svg" alt="")
+				+e.sizes
+					+e.size 13 мкм
+					+e.size 15 мкм
+					+e.size 16 мкм
+					+e.size 19 мкм
+					+e.size 24.5 мкм
+					+e.size 30 мкм
+					+e.size 40 мкм
+				+e.s-big
+					+e.s-row.row
+						.col-auto
+							+e.s-icon
+								img(loading="lazy" src="img/svg/eq-less.svg" alt="")
+						.col
+							+e.s-val 17.5 мкм
+							+e.s-txt
+								| идеальный размер для болеющих
+								br
+								| любими кожными заболеваниями
+				+e.girl
+					img(loading="lazy" src="img/svg/girl-lined.svg" alt="")
+				+e.high Чем толще шерсть, тем выше риск зуда, царапин, жжения
+				+e.more
+					+e.m-row.row
+						.col-auto
+							+e.m-icon
+								img(loading="lazy" src="img/svg/eq-more.svg" alt="")
+						.col
+							+e.m-big 30 мкм
+							+e.m-txt
+								| риск возникновения зуда
+								br
+								| резко увеличится
+				//angry-girl
+
+	// end sThin
+mixin sThinMaterial(imgNum)
+	+e.material(class=`material-${imgNum}`)
+		img(loading="lazy" src=`img/svg/material-${imgNum}.svg`)

@@ -1,10 +1,20 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
+		+pic('headerBlock-bg.jpg')(class='headerBlock__bg')
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+b.section-title
+				h1 Польза шерстяной одежды глазами дерматолога
+			+e.row.row
+				.col
+					+e.txt
+						p Мы поговорили о свойствах шерстяной одежды с Синявиным Дмитрием Юрьевичем, доктором медицинских наук. Он разобрал по косточкам последние исследования в этой области.
+				.col-auto
+					+e.img-row.row
+						.col-auto
+							+e.img
+								img(loading="lazy" src="img/@2x/doctor.png" alt="")
+						+e.txt-col.col
+							+e.name Синявин Дмитрий Юрьевич
+							+e.duty Врач-дерматолог
 	// end headerBlock

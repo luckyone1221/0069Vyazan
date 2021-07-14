@@ -1,0 +1,86 @@
+// start .sEven
+.sEven {
+	background: $black;
+	color: $white;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: rem(86);
+		background: $gray-220;
+	}
+	position: relative;
+	z-index: 2;
+
+	&__container{
+		position: relative;
+	}
+	&__txt{
+		max-width: rem(180);
+		position: absolute;
+		width: rem(180);
+		right: rem(18);
+		top: rem(192);
+
+		font-family: $mono;
+		font-size: 26px;
+		line-height: (28/26);
+		color: $white;
+	}
+	&__img{
+		position: relative;
+		z-index: 2;
+		width: rem(697);
+		margin: 0 auto 0 auto;
+		transform: translateX(-36px);
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+	&__bg{
+		position: absolute;
+		z-index: -1;
+
+		&--left{
+			top: 34.4%;
+			transform: translateX(-50%);
+			left: 64px;
+
+			width: rem(198.51);
+			height: rem(407.08);
+		}
+		&--right{
+			top: 35.2%;
+			transform: translateX(-50%);
+			left: calc(100% + 58px);
+
+			width: rem(198.51px);
+			height: rem(407.08px);
+		}
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	//
+	&__bot-txt{
+		position: absolute;
+		right: 26px;
+		bottom: 95px;
+		width: rem(199);
+
+		font-weight: 300;
+		font-size: rem(17);
+		line-height: (23/18);
+	}
+	&__{}
+} // end.sEven
