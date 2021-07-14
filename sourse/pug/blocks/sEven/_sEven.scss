@@ -5,11 +5,11 @@
 	&:before{
 		content: '';
 		position: absolute;
-		top: 0;
+		top: -1px;
 		left: 0;
 		z-index: -1;
 		width: 100%;
-		height: rem(86);
+		height: rem(87);
 		background: $gray-220;
 	}
 	position: relative;
